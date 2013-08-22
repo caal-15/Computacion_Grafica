@@ -1,0 +1,49 @@
+import pygame, math
+
+size = width,heigth = 800 , 600
+screen = pygame.display.set_mode(size)
+
+
+a = 0
+b = 0
+c = 0
+d = 0
+color = 255,255,255
+color_screen = 0,0,0
+
+#a = input(int("coordenada X1:"))
+#b = input(int("coordenada Y1:"))
+#c = input(int("coordenada x2:"))
+#d = input(int("coordenada Y2:"))
+
+a=100
+b=100
+c= 200
+d=200
+
+def drawpixel(c,x,y):
+    pygame.draw.rect(screen, c,[x,y,5,5])
+    pygame.display.flip()
+
+vector_x = 0
+vector_y = 0
+alfa = 0
+vector_x = c-a
+vector_y = d-b
+while 1:
+    for i in range(0,360):
+        alfa = alfa + 0.01
+        pixel_x = int(alfa*((math.sin(i)*5)**2))
+        pixel_y = int(alfa*((math.cos(i)*5)**2))
+        #if pixel_x>width and pixel_y>height:
+         #   break
+        drawpixel(color,pixel_x,pixel_y)
+        #screen.fill(color_screen)
+        
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT: 
+            sys.exit()
+    
+    
+
