@@ -9,5 +9,5 @@ for i in range(10,maxh):
     size = i, i
     display=pygame.display.set_mode(size)
     pygame.display.flip()
-    sleep(30)
+    sleep(0.001)
     
