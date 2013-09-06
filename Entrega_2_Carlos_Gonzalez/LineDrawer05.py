@@ -51,10 +51,10 @@ x1 = 1
 y1 = 1
 flag2 = 1
 numcolor = 0
+colors = ((0,0,0), (255, 0, 0), (0, 255, 0), (0,0, 255), (255, 255, 0), (255, 0, 255), (0, 255, 255))
 while 1:
     pos_label = myfont.render("X:%s Y:%s" % (pygame.mouse.get_pos()[0], pygame.mouse.get_pos()[1]), 1, (0,0,0), (255, 255, 255))
     screen.blit(pos_label, (10, 580))
-    colors = ((0,0,0), (255, 0, 0), (0, 255, 0), (0,0, 255), (255, 255, 0), (255, 0, 255), (0, 255, 255))
     events = pygame.event.get()
     for event in events:
         if event.type == QUIT: 
