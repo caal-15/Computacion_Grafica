@@ -41,8 +41,8 @@ def drawLine (x0, y0, x1, y1, screen, color):
 screen =pygame.display.set_mode((800, 600))
 myfont = pygame.font.SysFont("monospace", 14)
 screen.fill((255,255,255))
-pygame.display.set_caption("Line Drawer 0.5")
-inst_label= myfont.render("Press 'm' to change drawing mode, and 'c' to change color, press Space to clear", 1, (0,0,0), (255,255,255))
+pygame.display.set_caption("Line Drawer 0.5 (SPA)")
+inst_label= myfont.render("Presione 'm' para cambiar el modo de dibujo, 'c' para cambiar color, y Espacio para limpiar", 1, (0,0,0), (255,255,255))
 screen.blit(inst_label, (10, 20))
 flag = 1
 x0 = 0
